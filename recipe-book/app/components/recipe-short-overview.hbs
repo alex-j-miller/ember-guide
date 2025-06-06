@@ -3,6 +3,11 @@
 
   {{#if this.isExpanded}}
     <p class="recipe-detail">{{@description}}</p>
+    <LinkTo 
+    @route="recipes/details" 
+    @model="{{@id}}">
+    Details
+    </LinkTo>
   {{/if}}
 
 </div>

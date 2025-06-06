@@ -1,10 +1,11 @@
 {{page-title "Recipes"}}
 
-<h1>Hello World</h1>
+<h1>Recipe Book</h1>
 
 {{#each @model as |recipe|}}
   <RecipeShortOverview  
   @title="{{recipe.title}}" 
   @description="{{recipe.description}}"
+  @id="{{recipe.id}}"
   />
 {{/each}}
